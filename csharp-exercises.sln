@@ -34,7 +34,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayPrinter", "ArrayPrinte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewDict", "NewDict\NewDict.csproj", "{0DAE6D46-49DD-4F9F-B940-7EFA83E42885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingCharacters", "CountingCharacters\CountingCharacters.csproj", "{767930DD-8ABB-4A31-8865-3F6D8D651B49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountingCharacters", "CountingCharacters\CountingCharacters.csproj", "{767930DD-8ABB-4A31-8865-3F6D8D651B49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "School", "School\School.csproj", "{C10E80AA-466B-418E-A381-686F5C4C3F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant", "Restaurant\Restaurant.csproj", "{D59CDEF5-DD17-482A-A7F3-22DA96B10E98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +114,14 @@ Global
 		{767930DD-8ABB-4A31-8865-3F6D8D651B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{767930DD-8ABB-4A31-8865-3F6D8D651B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{767930DD-8ABB-4A31-8865-3F6D8D651B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10E80AA-466B-418E-A381-686F5C4C3F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10E80AA-466B-418E-A381-686F5C4C3F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10E80AA-466B-418E-A381-686F5C4C3F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10E80AA-466B-418E-A381-686F5C4C3F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59CDEF5-DD17-482A-A7F3-22DA96B10E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59CDEF5-DD17-482A-A7F3-22DA96B10E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59CDEF5-DD17-482A-A7F3-22DA96B10E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59CDEF5-DD17-482A-A7F3-22DA96B10E98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
