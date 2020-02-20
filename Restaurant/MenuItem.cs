@@ -6,19 +6,55 @@ namespace Restaurant
 {
     class MenuItem
     {
-        string Name { get; set; }
-        double Price { get; set; }
-        string Description { get; set; }
-        string Category { get; set; }
-        DateTime DateAdded
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public string Description { get; set; }
+        public enum Categories
         {
-            get { return DateAdded; }
-            set { DateAdded = DateTime.Now; }
+            Appetizer, MainCourse, Dessert
         }
-        bool IsNew
+        public Categories Category { get; set; }
+        private DateTime _dateAdded;
+        public DateTime DateAdded
         {
-            set { IsNew = (DateAdded.Date >= DateTime.Now.Date.AddMonths(-3)); }
+            get { return _dateAdded; }
+            set { _dateAdded = DateTime.Now; }
         }
 
+        public override String ToString()
+        {
+            string menuItemPrint = "";
+
+            menuItemPrint = Name + " - $" + Price + "\n" + Description + "\n";
+
+            return menuItemPrint;
+        }
+
+        public override bool Equals(Object o)
+        {
+
+            if (o == this)
+            {
+                return true;
+            }
+
+            if (o == null)
+            {
+                return false;
+            }
+
+            if (o.GetType() != GetType())
+            {
+                return false;
+            }
+
+            MenuItem menuItemObj = o as MenuItem;
+            return Name == menuItemObj.Name;
+        }
+
+        public bool CheckNew()
+        {
+            return (DateAdded.Date >= DateTime.Now.Date.AddMonths(-3));
+        }
     }
 }
